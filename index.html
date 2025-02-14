@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Product List Application</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Product List Application</h1>
+        
+        <div class="controls">
+            <input type="text" id="searchInput" placeholder="Search products...">
+            
+            <select id="categoryFilter">
+                <option value="">All Categories</option>
+                <option value="Electronics">Electronics</option>
+                <option value="Clothing">Clothing</option>
+                <option value="Books">Books</option>
+            </select>
+            
+            <input type="number" id="minPrice" placeholder="Min Price">
+            <input type="number" id="maxPrice" placeholder="Max Price">
+            
+            <button id="applyFilters">Apply Filters</button>
+            <button id="resetFilters">Reset Filters</button>
+            <button id="mapProducts">Map Products</button>
+            <button id="calculateTotal">Calculate Total</button>
+        </div>
+
+        <div id="totalCost"></div>
+        
+        <table id="productTable">
+            <thead>
+                <tr>
+                    <th>Code</th>
+                    <th>Name</th>
+                    <th>Category</th>
+                    <th>Price</th>
+                    <th>Promotion</th>
+                    <th>Manufacture Date</th>
+                    <th>Purchase Date</th>
+                </tr>
+            </thead>
+            <tbody id="productList"></tbody>
+        </table>
+
+        <div id="mappedProducts"></div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
